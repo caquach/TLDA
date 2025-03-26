@@ -18,9 +18,17 @@ For example from the url https://www.youtube.com/playlist?list=abcd, the ID woul
 python app.py
 ```
 
-### client_secrets.json
-- Create your own project on [Google Cloud Console](https://console.cloud.google.com/)
+### Data Folder
+- client_secrets.json: Create your own project on [Google Cloud Console](https://console.cloud.google.com/)
     - Web Application, Redirect URL: http://localhost:8080/
+- handles.txt: line seperated list of handles
+- my-pl.txt: Your Playlist ID to add to
+- Ignore changes you made to these files:
+```bash
+git update-index --skip-worktree data/client_secrets.json
+git update-index --skip-worktree data/handles.txt
+git update-index --skip-worktree data/my-pl.txt
+```
 
 ### Bugs
 - Token refresh requests in oauth_initialize() doesn't work sometimes
