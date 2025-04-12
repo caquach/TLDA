@@ -23,7 +23,7 @@ python app.py
     - Web Application, Redirect URL: http://localhost:8080/
 - handles.txt: line seperated list of handles
 - my-pl.txt: Your Playlist ID to add to
-- Ignore changes you made to these files:
+- Git commands to ignore changes you made to these files:
 ```bash
 git update-index --skip-worktree data/client_secrets.json
 git update-index --skip-worktree data/handles.txt
@@ -36,7 +36,7 @@ git update-index --skip-worktree data/my-pl.txt
 
 ### TODO
 - Fix oauth_initialize() refresh token sometimes not working
-- get_upload_playlists(): maybe rename function
+- get_upload_playlists(): rename function
 - validate_playlists(): filter by desired playlist: videos, shorts, streams, etc
 - make a GUI for this
 
